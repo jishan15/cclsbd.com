@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\Admin\DashboardController;
+
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -104,13 +105,36 @@ Route::get('/news', function () {
     return view('news');
 });
 
+Route::middleware(['auth', 'user-access:user'])->group(function () {
+  
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+});
+  
+/*------------------------------------------
+--------------------------------------------
+All Admin Routes List
+--------------------------------------------
+--------------------------------------------*/
+Route::middleware(['auth', 'user-access:admin'])->group(function () {
+  
+    Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
+});
+  
+/*------------------------------------------
+--------------------------------------------
+All Admin Routes List
+--------------------------------------------
+--------------------------------------------*/
+// Route::middleware(['auth', 'user-access:manager'])->group(function () {
+  
+//     Route::get('/manager/home', [HomeController::class, 'managerHome'])->name('manager.home');
+// });
 
-
-Route::group(['prefix' =>'admin','middleware'=> 'auth'],function(){
-    Route::get('dashboard',[DashboardController::class,'index'])->name('admin.dashboard');
+// Route::group(['prefix' =>'admin','middleware'=> 'auth'],function(){
+//     Route::get('dashboard',[DashboardController::class,'index'])->name('admin.dashboard');
    
 
-});
+// });
 
 
 
@@ -119,4 +143,4 @@ Route::group(['prefix' =>'admin','middleware'=> 'auth'],function(){
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

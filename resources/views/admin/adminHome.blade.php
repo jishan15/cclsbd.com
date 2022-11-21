@@ -10,7 +10,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="{{asset('backend')}}/images/favicon.png">
     <!-- Page Title  -->
-    <title>User dashboard</title>
+    <title>Sales Dashboard | DashLite Admin Template</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{asset('backend')}}/css/dashlite.css?ver=2.9.0">
     <link id="skin-default" rel="stylesheet" href="{{asset('backend')}}/css/theme.css?ver=2.9.0">
@@ -747,7 +747,7 @@
                 </div>
                 <!-- main header @e -->
                 <!-- content @s -->
-                <div class="nk-content ">
+                {{-- <div class="nk-content ">
                     <div class="container-fluid">
                         <div class="nk-content-inner">
                             <div class="nk-content-body">
@@ -1403,7 +1403,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <!-- content @e -->
                 <!-- footer @s -->
                 <div class="nk-footer">
