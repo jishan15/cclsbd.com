@@ -24,16 +24,16 @@
             <!-- main @s -->
             <div class="nk-main ">
                 <!-- sidebar @s -->
-              
-               @include('layouts.partial.sidebar')
-             
+               
+               @include('admin.layouts.partial.sidebar')
+               
                 <!-- sidebar @e -->
                 <!-- wrap @s -->
                 <div class="nk-wrap ">
                     <!-- main header @s -->
+                    
+                   @include('admin.layouts.partial.header')
                   
-                   @include('layouts.partial.header')
-                 
                     <!-- main header @e -->
                     <!-- content @s -->
                     <div class="nk-content ">
@@ -41,10 +41,10 @@
                     </div>
                     <!-- content @e -->
                     <!-- footer @s -->
-                  
-                    @include('layouts.partial.footer')
+                    
+                    @include('admin.layouts.partial.footer')
                     <!-- footer @e -->
-                  
+                 
                 </div>
                 <!-- wrap @e -->
             </div>
@@ -55,6 +55,8 @@
     </div>
 
 
+
+    <!-- JavaScript -->
     <script src="{{asset('backend')}}/js/bundle.js?ver=2.9.0"></script>
     <script src="{{asset('backend')}}/js/scripts.js?ver=2.9.0"></script>
     <script src="{{asset('backend')}}/js/charts/gd-default.js?ver=2.9.0"></script>
