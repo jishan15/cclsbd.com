@@ -248,28 +248,28 @@
                             <h3>Ocean Freight</h3>
                             <div class="tiny-border margintop10 marginbottom10"></div>
                                 <img src="{{asset('frontend')}}/img/services/1.png" class="img-fluid margintop20 marginbottom20 wow fadeInRight" alt="" style="height: 90px; width:100%;"/>
-                                <p class="" style="font-size: 20px;">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
+                                <p class="" style="font-size: 18px;">Ocean freight is the method of transporting goods through the sea. It is an important part of cross-border trade that lets people move massive amounts of goods between countries.</p>
                                 <a href="{{ url('/ocean-freight')}}" class="btn-arrow hover-light"><span class="line"></span><span class="url">View Details</span></a>
                         </div>
                         <div class="col-lg-3 col-md-6 bg-color-fx padding-5 text-center">
                             <h3>Air Freight</h3>
                             <div class="tiny-border margintop10 marginbottom10"></div>
                             <img src="{{asset('frontend')}}/img/collection/air/Air-Freightone-removebg-preview.png" class="img-fluid margintop20 marginbottom20 wow fadeInRight" data-wow-delay=".3s" alt="" style="height: 90px; width:100%;"/>
-                            <p style="font-size: 20px;">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
+                            <p style="font-size: 18px;">Air freight parcel delivery is the transfer and shipment of goods via an air carrier, which may be charter or commercial. Such shipments travel out of commercial and passenger aviation gateways to anywhere planes can fly and land.</p>
                             <a href="{{ url('/air-freight')}}" class="btn-arrow hover-light"><span class="line"></span><span class="url">View Details</span></a>
                         </div>
                         <div class="col-lg-3 col-md-6 bg-color-fx padding-5 text-center">
                             <h3>Project Shipment</h3>
                             <div class="tiny-border margintop10 marginbottom10"></div>
                             <img src="{{asset('frontend')}}/img/services/3.png" class="img-fluid margintop20 marginbottom20 wow fadeInRight" data-wow-delay=".6s" alt="" style="height: 90px; width:100%;"/>
-                            <p style="font-size: 20px;">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
+                            <p style="font-size: 18px;">Project shipment The request of the owner of the goods to transport cargo that is based on the weight, volume,size and time of transfer by special trucks of transport companies and receiving a special pass is called project load.</p>
                             <a href="{{ url('project-shipment')}}" class="btn-arrow hover-light"><span class="line"></span><span class="url">View Details</span></a>
                         </div>
                         <div class="col-lg-3 col-md-6 bg-color-fx padding-5 text-center">
                             <h3>Cargo Express</h3>
                                 <div class="tiny-border margintop10 marginbottom10"></div>
                                 <img src="{{asset('frontend')}}/img/services/4.png" class="img-fluid margintop20 marginbottom20 wow fadeInRight" data-wow-delay=".9s" alt="" style="height: 90px; width:100%;"/>
-                                <p style="font-size: 20px;">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
+                                <p style="font-size: 18px;">Cargo Express Trailers, we are focused on being the best rather than the biggest.It’s easy to see why Cargo Express makes the best value-driven, high-quality cargo utility trailers.</p>
                                 <a href="{{ url('/cargo-express')}}" class="btn-arrow hover-light"><span class="line"></span><span class="url">View Details</span></a>
                         </div>
                        
