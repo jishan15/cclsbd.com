@@ -191,8 +191,8 @@
                             <h1>Testimonials</h1>
                             <div class="crumb">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="{{ url('/about')}}">About</a></li>
                                     <li>Testimonials</li>
                                 </ul>
                             </div>
@@ -211,77 +211,76 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-12">
                                 <div class="testi-box-1">
                                     <blockquote>
-                                        Gocargo people professional and courteous attitude, expert knowledge and patience handling our specific issues are very important to our customer.
+                                        CML Consolidation & Logistics Services Ltd's people professional and courteous attitude, expert knowledge and patience handling our specific issues are very important to our customer.
 
                                     </blockquote>
-                                    <div class="arrow-down"></div>
+                                    
                                     <div class="testi-by">
-                                        <img src="img/about/testimonials/testimonial-1.jpg" class="img-circle" alt="">
-                                        <span class="name"><strong>Jane Salima</strong>, General Manager<br>
-                                            Nexus Motors</span>
+                                        <img src="{{asset('frontend')}}/img/collection/profile/Ariful-Ahsan-MD-SCL.jpg" class="img-circle" alt="">
+                                        <span class="name"><strong>Ariful Ahsan</strong>,Managing Director<br>
+                                           </span>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            <div class="col-lg-12 mt-4">
                                 <div class="testi-box-1">
                                     <blockquote>
                                         Your representatives have very helpful attitude and their attention to detail help us to move our work smoothly without any delay...good job guys.
 
 
                                     </blockquote>
-                                    <div class="arrow-down"></div>
+                                    
                                     <div class="testi-by">
-                                        <img src="img/about/testimonials/testimonial-2.jpg" class="img-circle" alt="">
-                                        <span class="name"><strong>Dave Smith</strong>, Sales Manager<br>
-                                            Jepara Furniture</span>
+                                        <img src="{{asset('frontend')}}/img/collection/profile/Sororwar-Alam-Director-CCLS-min.jpg" class="img-circle" alt="">
+                                        <span class="name"><strong>Sorowar Alom</strong>, Director<br>
+                                            Sea Freight</span>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="divider-single"></div>
 
-                            <div class="col-md-6">
+                            <div class="col-lg-12">
                                 <div class="testi-box-1">
                                     <blockquote>
-                                        I'm really impressed by the professionalism that the Gocargo relocation. Now we stay with our new studio at Metro city thanks Gocargo.
+                                        I'm really impressed by the professionalism that the CML Consolidation & Logistics services ltd  relocation. Now we stay with our new studio at Dhaka city thanks CML Consolidation & Logistics Services Ltd.
 
                                     </blockquote>
-                                    <div class="arrow-down"></div>
+                                    
                                     <div class="testi-by">
-                                        <img src="img/about/testimonials/testimonial-3.jpg" class="img-circle" alt="">
-                                        <span class="name"><strong>Mike Martien</strong>, Web Designer<br>
-                                            Bamskies Studio</span>
+                                        <img src="{{asset('frontend')}}/img/collection/profile/IMG_7229-web-min.jpg" class="img-circle" alt="">
+                                        <span class="name"><strong>Azmain Bhuiyan</strong>, Director<br>
+                                            Business Development</span>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-6">
+                            {{-- <div class="col-md-6">
                                 <div class="testi-box-1">
                                     <blockquote>
                                         Thank you very much awesome jobs, I will recommend everybody to use your company because you know excellent your job and you are professionals.
 
                                     </blockquote>
-                                    <div class="arrow-down"></div>
+                                    
                                     <div class="testi-by">
                                         <img src="img/about/testimonials/testimonial-4.jpg" class="img-circle" alt="">
                                         <span class="name"><strong>Steve Powers</strong>, Producer<br>
                                             Alisa Entertainment</span>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="divider-single"></div>
-                            <div class="col-md-6">
+                            </div> --}}
+s
+                            {{-- <div class="col-md-6">
                                 <div class="testi-box-1">
                                     <blockquote>
                                         Your staff is very, very friendly and helpful. I will recommend your service to all my friends back in the Greenland. Keep up the good work.
 
                                     </blockquote>
-                                    <div class="arrow-down"></div>
+                                    
                                     <div class="testi-by">
                                         <img src="img/about/testimonials/testimonial-5.jpg" class="img-circle" alt="">
                                         <span class="name"><strong>Natalia Romanaf</strong>, Wedding Planner<br>
@@ -321,27 +320,14 @@
                                             Jepara Furniture</span>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
 
-                            <div class="col-md-6">
-                                <div class="testi-box-1">
-                                    <blockquote>
-                                        I'm really impressed by the professionalism that the Gocargo relocation. Now we stay with our new studio at Metro city thanks Gocargo.
-
-                                    </blockquote>
-                                    <div class="arrow-down"></div>
-                                    <div class="testi-by">
-                                        <img src="img/about/testimonials/testimonial-8.jpg" class="img-circle" alt="">
-                                        <span class="name"><strong>Mike Martien</strong>, Web Designer<br>
-                                            Bamskies Studio</span>
-                                    </div>
-                                </div>
-                            </div>
+                          
 
 
 
-                            <div class="divider-single"></div>
+                            {{-- <div class="divider-single"></div> --}}
 
                         </div>
                     </div>
@@ -349,11 +335,11 @@
 					<div class="col-md-4">
                         <div class="widget">
                             <ul class="side-nav">
-                                <li><a href="company.html">Company</a></li>
-                                <li><a href="people.html">People</a></li>
-                                <li><a href="history.html">History</a></li>
-                                <li class="active"><a href="testimonial.html">Testimonials</a></li>
-                                <li><a href="careers.html">Careers</a></li>
+                                <li><a href="">Company</a></li>
+                                <li><a href="{{url('/executive')}}">Executive</a></li>
+                                <li><a href="">History</a></li>
+                                <li class="active"><a href="{{url('/testimonials')}}">Testimonials</a></li>
+                                <li><a href="">Careers</a></li>
                                 <li><a href="{{ url('/faq')}}">FAQ</a></li>
                             </ul>
                         </div>
@@ -362,44 +348,23 @@
                             <h3>Latest News</h3>
 
                             <ul class="news-list-date">
+                                @foreach ($newstestimonals as $newstestimonal)
                                 <li>
                                     <div class="date">
-                                        <span class="day">19</span>
-                                        <span class="month">Aug</span>
+                                        <span class="day">{{$newstestimonal->date}}</span>
+                                        <span class="month">{{$newstestimonal->month}}</span>
                                     </div>
                                     <div class="text">
                                         <a href="#">
-                                            <h4>We Opening New Branch</h4>
+                                            <h4>{{$newstestimonal->title}}</h4>
                                         </a>
-                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
+                                        <p>{{$newstestimonal->sub_title}}</p>
                                     </div>
                                 </li>
+                                @endforeach
+                               
 
-                                <li>
-                                    <div class="date">
-                                        <span class="day">18</span>
-                                        <span class="month">Aug</span>
-                                    </div>
-                                    <div class="text">
-                                        <a href="#">
-                                            <h4>Estimate Shipping Cost</h4>
-                                        </a>
-                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="date">
-                                        <span class="day">17</span>
-                                        <span class="month">Aug</span>
-                                    </div>
-                                    <div class="text">
-                                        <a href="#">
-                                            <h4>Tracking From Mobile Phone</h4>
-                                        </a>
-                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
-                                    </div>
-                                </li>
+                               
                             </ul>
                         </div>
                     </div>

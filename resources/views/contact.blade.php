@@ -173,14 +173,7 @@
                         </nav>
                         <!-- mainmenu close -->
 
-                        <!-- search -->
-                        <!-- <div class="search text-right">
-                            <input type="text" name="search" id="search" placeholder="search">
-							<button type="submit" class="btn-search-icon">
-								<i class="fa fa-search"></i>
-							</button>
-                        </div> -->
-                        <!-- social icons close -->
+                       
 
                     </div>
                 </div>
@@ -324,27 +317,36 @@
                         </div>
 
                         <div class="col-lg-8">
-                            <form id="contact" class="row form-transparent" name="form1" method="post" action="#">
+                            <form  class="row form-transparent"  method="POST" action="{{Route('contact')}}">
+                                @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+                                @csrf
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="first_name"  placeholder="First Name*" /></div>
 
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" name="name" id="name" placeholder="First Name*" /></div>
-
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last Name*" /></div>
+                                    <input type="text" class="form-control" name="last_name"  placeholder="Last Name*" /></div>
 
                                 <div class="col-md-6">
                                     <div id="error_email" class="error">Please check your email</div>
-                                    <input type="text" class="form-control" name="email" id="email" placeholder="Email*" />
+                                    <input type="text" class="form-control" name="email"  placeholder="Email*" />
                                 </div>
 
                                 <div class="col-md-6">
                                     <div id="error_email" class="error">Please check your email</div>
-                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*" />
+                                    <input type="text" class="form-control" name="phone"  placeholder="Phone*" />
                                 </div>
 
                                 <div class="col-md-12">
                                     <div id="error_message" class="error">Please check your message</div>
-                                    <textarea cols="10" rows="10" name="message" id="message" class="form-control" placeholder="Your message"></textarea>
+                                    <textarea cols="10" rows="10" name="message"  class="form-control" placeholder="Your message"></textarea>
                                 </div>
 
                                 <div id="mail_success" class="col-md-12 success">Thank you. Your message has been sent.</div>
@@ -352,7 +354,7 @@
 
                                 <div class="col-md-12">
                                     <p id="btnsubmit">
-                                        <input type="submit" id="send" value="Send" class="btn btn-custom fullwidth"/>
+                                        <input type="submit"  value="Send" class="btn btn-custom fullwidth"/>
                                     </p>
                                 </div>
 

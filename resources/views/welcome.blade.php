@@ -288,7 +288,7 @@
                                     <div class="col-md-6 col-md-offset-3s">
                                         <h2>The Most Progressive Company</h2>
                                         <div class="divider-deco"><span></span></div>
-                                        <p class="lead">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate </p>
+                                        <p class="lead">The organizational goal of CML Consolidation & Logistics Services Ltd (CCLS) is to be regarded as the premier freight forwarding company in Bangladesh providing customers and overseas partners with a reliable and cost effective logistic management services all under one roof.</p>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <h3><span class="id-color">Vision</span></h3>
@@ -551,33 +551,36 @@
                             <div class="divider-deco"><span></span></div>
 
                             <div class="row">
-                                <div class="col-md-4 news-item style-2">
+                                @foreach($newsrooms as $key=> $newsroom)
+                                <div class="col-lg-4 news-item style-2">
 
                                     <figure class="pic-hover">
                                         <span class="center-xy">
-                                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=dyRn-XQLzm4"><i class="fa fa-play btn-action btn-play"></i></a>
+                                            <a class="" href=""><i class=""></i></a>
                                         </span>
                                         <span class="bg-overlay"></span>
-                                        <img src="{{asset('frontend')}}/img/news/news_1.jpg" class="img-fluid" alt="">
+                                        <img src="{{asset('uploads/newsroom/'.$newsroom->image)}}" class="img-fluid" alt="" style="height: 205px; width:420px;">
                                     </figure>
 
                                     <div class="inner">
                                         <div class="date">
-                                            <span class="day">20</span>
-                                            <span class="month">Aug</span>
+                                            <span class="day">{{$newsroom->date}}</span>
+                                            <span class="month">{{$newsroom->month}}</span>
                                         </div>
 
                                         <div class="desc">
                                             <a href="#">
-                                                <h4>CML Consolidation & Logistics Services Ltd Says Happy New Years</h4>
+                                                <h4>{{$newsroom->title}}</h4>
+                                                {{-- CML Consolidation & Logistics Services Ltd Says Happy New Years --}}
                                             </a>
-                                            Etiam pharetra, erat sed fermentum feugiat, velit mauris egest...
+                                            {{$newsroom->sub_title}}
 											<br>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="col-md-4 news-item style-2">
+                                @endforeach
+                                {{ $newsrooms->links() }}
+                                {{-- <div class="col-lg-4 news-item style-2">
 
                                     <figure class="pic-hover">
                                         <span class="center-xy"></span>
@@ -599,9 +602,9 @@
 											<br>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
 
-                                <div class="col-md-4 news-item style-2">
+                                {{-- <div class="col-md-4 news-item style-2">
 
                                     <figure class="pic-hover">
                                         <span class="center-xy"></span>
@@ -623,7 +626,7 @@
 											<br>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
 
                             </div>
                         </div>

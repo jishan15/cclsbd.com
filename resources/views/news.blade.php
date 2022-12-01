@@ -206,7 +206,8 @@
         <div id="content">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
+                   
+                    <div class="col-lg-8">
                         <div id="newslist" class="news-list row">
                             <div class="news-item style-2 item">
 								
@@ -215,7 +216,7 @@
 										<a class="popup-youtube" href="https://www.youtube.com/watch?v=OGgWneUreb0"><i class="fa fa-play btn-action btn-play"></i></a>
 									</span>
 									<span class="bg-overlay"></span>
-									<img src="{{asset('frontend')}}/img/news/news_1.jpg" class="img-fluid" alt="">
+									<img src="{{asset('frontend')}}/img/news/news_1.jpg" class="img-fluid" alt="" style="width: 80%; height:300px;">
 								</figure>
 								
                                 <div class="inner">
@@ -233,32 +234,33 @@
                                     </div>
                                 </div>
                             </div>
-
+                            @foreach($newsrooms as $key=> $newsroom)
                             <div class="news-item style-2 item">
 
                                 <figure class="pic-hover">
                                         <span class="center-xy"></span>
                                         <span class="bg-overlay"></span>
-                                        <img src="{{asset('frontend')}}/img/news/news_2.jpg" class="img-fluid" alt="">
+                                        <img src="{{asset('uploads/newsroom/'.$newsroom->image)}}" class="img-fluid" alt="" style="width: 80%; height:300px;">
                                     </figure>
 
                                 <div class="inner">
                                     <div class="date">
-                                        <span class="day">19</span>
-                                        <span class="month">Aug</span>
+                                        <span class="day">{{$newsroom->date}}</span>
+                                        <span class="month">{{$newsroom->month}}</span>
                                     </div>
 
                                     <div class="desc">
                                         <a href="#">
-                                            <h4>CML Consolidation & Logistics Services Ltd Says Happy New Years</h4>
+                                            <h4>{{$newsroom->title}}</h4>
                                         </a>
-                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue... [read more]
+                                        {{$newsroom->sub_title}}
 											<br>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="news-item style-2 item">
+                            @endforeach
+                            {{-- {{ $newsrooms->links() }} --}}
+                            {{-- <div class="news-item style-2 item">
 
                                 <figure class="pic-hover">
                                         <span class="center-xy"></span>
@@ -400,14 +402,14 @@
 											<br>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
 
 
                         </div>
 
                         <div class="clearfix"></div>
 
-                        <div class="text-center ">
+                        {{-- <div class="text-center ">
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
                                   <li class="page-item"><a class="page-link" href="#">Previous</a></li>
@@ -417,11 +419,11 @@
                                   <li class="page-item"><a class="page-link" href="#">Next</a></li>
                                 </ul>
                               </nav>
-                        </div>
+                        </div> --}}
 
                     </div>
 
-
+                 
 
                     <div id="sidebar" class="col-md-4">
                         <div class="widget">

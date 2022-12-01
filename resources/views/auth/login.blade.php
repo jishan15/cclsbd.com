@@ -87,7 +87,7 @@
             <div class="col-lg-4">
               <div class="card swadow">
                 <div class="card-header" style="background-color:#2e3791;">
-                 <h3> <div class="card-title text-center text-light">LogIn </div></h3>
+                 <h3> <div class="card-title text-center text-light"><a href="/" style="text-decoration: none;">LogIn</a> </div></h3>
                 </div>
                 <div class="card-body text-light" style="background-color:#2e3791;">
                     <form method="POST" action="{{ route('login') }}">

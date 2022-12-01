@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from www.exotheme.com/gocargo-recharge/people.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Sep 2022 07:45:39 GMT -->
 <head>
     <meta charset="utf-8">
     <title>CML Consolidation & Logistics Services Ltd</title>
@@ -146,7 +144,7 @@
 
                                 <li><a href="#">Customer Tools</a>
                                     <ul>
-                                        <li><a href="services.html">ADVISORIES</a>
+                                        <li><a href="">ADVISORIES</a>
                                             <ul>
                                                 <li><a href="#">GENERAL ADVISORIES</a></li>
                                                 <li><a href="#">INTERNATIONAL ADVISORIES</a></li>
@@ -187,18 +185,18 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1>People</h1>
+                            <h1>Executive</h1>
                             <div class="crumb">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li>People</li>
-                                </ul>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="{{url('/about')}}">About</a></li>
+                                    <li>Executive</li>
+                                </ul> 
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </section>
         <!-- subheader close -->
 
@@ -213,7 +211,7 @@
                         <div class="divider-deco"><span></span></div>
                         <p><strong><i>CML Consolidation & Logistics Services Ltd’s Ocean Freight and Air Freight services are extended worldwide and equipped to accept any shipment on board whether FCL, LCL, Conventional & Out-Of-Gauge Cargo. The companies are also capable to provide NVOCC services, worldwide forwarding & specially designed logistic services to the remote corner of the world, meeting the requirements of each individual customer</i></strong></p>
                         <p>
-                            <img src="img/collection/profile/OIP.jpg" alt=""  class="image-fluid">
+                            <img src="{{asset('frontend')}}/img/collection/profile/OIP.jpg" alt=""  class="image-fluid">
                         </p>
                         <p>
                             For Cargo receiving, storing, pre-carting and stuffing, we have an agreement with most of the off-dock (CFS operators) at Chittagong. We also handle shipments to/from Mongla Port, Pangoan and Dhaka ICD.
@@ -227,19 +225,16 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <h2>Health &amp; Safety</h2>
-                                <div class="divider-deco"><span></span></div>
-                                <h4>Health</h4>
-                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi 
-							
-							<h4>Safety</h4>
-                                Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
+                                <div class="divider-deco"><span></span></div>							
+							<h4>Health & Safety</h4>
+                                    We are committed to provide a safe and healthy working environment for all staffs, contractors, and even visitors and customers. We also have our own internal OSHA committee to ensure the welfare of all our employees.
                             </div>
 
                             <div class="col-md-6">
                                 <h2>Future With Us</h2>
                                 <div class="divider-deco"><span></span></div>
                                 <p>
-                                    <img src="img/misc/pic%20(5).jpg" class="pull-left" alt="">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                    <img src="{{asset('frontend')}}/img/misc/pic%20(5).jpg" class="pull-left" alt="">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
                                 </p>
                             </div>
 
@@ -261,8 +256,8 @@
                                             <span class="fx"></span>
                                             <img src="{{asset('frontend')}}/img/collection/profile/Ariful-Ahsan-MD-SCL.jpg" class="img-fluid" alt="">
                                         </div>
-                                        <span class="name">Thomas White</span>
-                                        <span class="position">Warehouse Officer</span>
+                                        <span class="name">Ariful Ahsan</span>
+                                        <span class="position">Managing Director</span>
                                     </div>
                                 </div>
 
@@ -272,8 +267,8 @@
                                             <span class="fx"></span>
                                             <img src="{{asset('frontend')}}/img/collection/profile/Sororwar-Alam-Director-CCLS-min.jpg" class="img-fluid" alt="">
                                         </div>
-                                        <span class="name">Thomas White</span>
-                                        <span class="position">Warehouse Officer</span>
+                                        <span class="name">Sorowar Alom</span>
+                                        <span class="position">Director, Sea Freight</span>
                                     </div>
                                 </div>
 
@@ -283,67 +278,15 @@
                                             <span class="fx"></span>
                                             <img src="{{asset('frontend')}}/img/collection/profile/IMG_7229-web-min.jpg" class="img-fluid" alt="">
                                         </div>
-                                        <span class="name">Thomas White</span>
-                                        <span class="position">Warehouse Officer</span>
+                                        <span class="name">Azmain Bhuiyan</span>
+                                        <span class="position">Director, Business Development</span>
                                     </div>
                                 </div>
 
-                                <!-- <div class="col-md-3">
-                                    <div class="team-list text-center">
-                                        <div class="pic">
-                                            <span class="fx"></span>
-                                            <img src="img/about/people/team-4.jpg" class="img-fluid" alt="">
-                                        </div>
-                                        <span class="name">Thomas White</span>
-                                        <span class="position">Warehouse Officer</span>
-                                    </div>
-                                </div> -->
+                               
 
                                 <div class="divider-single"></div>
 
-                                <!-- <div class="col-md-3">
-                                    <div class="team-list text-center">
-                                        <div class="pic">
-                                            <span class="fx"></span>
-                                            <img src="img/about/people/team-5.jpg" class="img-fluid" alt="">
-                                        </div>
-                                        <span class="name">Thomas White</span>
-                                        <span class="position">Warehouse Officer</span>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="team-list text-center">
-                                        <div class="pic">
-                                            <span class="fx"></span>
-                                            <img src="img/about/people/team-6.jpg" class="img-fluid" alt="">
-                                        </div>
-                                        <span class="name">Thomas White</span>
-                                        <span class="position">Warehouse Officer</span>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="team-list text-center">
-                                        <div class="pic">
-                                            <span class="fx"></span>
-                                            <img src="img/about/people/team-7.jpg" class="img-fluid" alt="">
-                                        </div>
-                                        <span class="name">Thomas White</span>
-                                        <span class="position">Warehouse Officer</span>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <div class="team-list text-center">
-                                        <div class="pic">
-                                            <span class="fx"></span>
-                                            <img src="img/about/people/team-8.jpg" class="img-fluid" alt="">
-                                        </div>
-                                        <span class="name">Thomas White</span>
-                                        <span class="position">Warehouse Officer</span>
-                                    </div>
-                                </div> -->
 
                             </div>
                         </div>
@@ -354,12 +297,12 @@
 					<div class="col-md-4">
                         <div class="widget">
                             <ul class="side-nav">
-                                <li><a href="company.html">Company</a></li>
-                                <li class="active"><a href="people.html">People</a></li>
-                                <li><a href="history.html">History</a></li>
-                                <li><a href="testimonial.html">Testimonials</a></li>
-                                <li><a href="careers.html">Careers</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
+                                
+                                <li class="active"><a href="{{ url('/executive')}}">Executive</a></li>
+                                <li><a href="">History</a></li>
+                                <li><a href="{{ url('/testimonial')}}">Testimonials</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="{{ url('/faq')}}">FAQ</a></li>
                             </ul>
                         </div>
 
@@ -367,20 +310,23 @@
                             <h3>Latest News</h3>
 
                             <ul class="news-list-date">
+                                @foreach ($executives as $executive)
                                 <li>
                                     <div class="date">
-                                        <span class="day">19</span>
-                                        <span class="month">Aug</span>
+                                        <span class="day">{{$executive->date}}</span>
+                                        <span class="month">{{$executive->month}}</span>
                                     </div>
                                     <div class="text">
                                         <a href="#">
-                                            <h4>We Opening New Branch</h4>
+                                            <h4>{{$executive->title}}</h4>
                                         </a>
-                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
+                                        <p>{{$executive->sub_title}}</p>
                                     </div>
                                 </li>
+                                @endforeach
+                               
 
-                                <li>
+                                {{-- <li>
                                     <div class="date">
                                         <span class="day">18</span>
                                         <span class="month">Aug</span>
@@ -404,7 +350,7 @@
                                         </a>
                                         <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
                                     </div>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
 
@@ -414,14 +360,14 @@
                             <div id="testi-carousel-2" class="testi-slider wow fadeIn" data-wow-delay="0s" data-wow-duration="1s">
                                 <div class="item">
                                     <blockquote>
-                                        Gocargo people professional and courteous attitude, expert knowledge and patience handling our specific issues are very important to our customer
+                                        CCLS's people professional and courteous attitude, expert knowledge and patience handling our specific issues are very important to our customer
 
                                     </blockquote>
                                     <div class="arrow-down"></div>
                                     <div class="testi-by">
-                                        <img src="{{asset('frontend')}}/img/about/testimonials/testimonial-1.jpg" class="img-circle" alt="">
-                                        <span class="name"><strong>Jane Salima</strong>, General Manager<br>
-                                            Nexus Motors</span>
+                                        <img src="{{asset('frontend')}}/img/collection/profile/Ariful-Ahsan-MD-SCL.jpg" class="img-circle" alt="">
+                                        <span class="name"><strong>Ariful Islam</strong>, Managing Director<br>
+                                            </span>
                                     </div>
                                 </div>
 
@@ -432,22 +378,22 @@
                                     </blockquote>
                                     <div class="arrow-down"></div>
                                     <div class="testi-by">
-                                        <img src="{{asset('frontend')}}/img/about/testimonials/testimonial-2.jpg" class="img-circle" alt="">
-                                        <span class="name"><strong>Dave Smith</strong>, Sales Manager<br>
-                                            Jepara Furniture</span>
+                                        <img src="{{asset('frontend')}}/img/collection/profile/Sororwar-Alam-Director-CCLS-min.jpg" class="img-circle" alt="">
+                                        <span class="name"><strong>Sorowar Alom</strong>, Director<br>
+                                            Sea Freight</span>
                                     </div>
                                 </div>
 
                                 <div class="item">
                                     <blockquote>
-                                        I'm really impressed by the professionalism that the Gocargo relocation. Now we stay with our new studio at Metro city thanks Gocargo
+                                        I'm really impressed by the professionalism that the CML Consolidation & Logistics Services Ltd relocation. Now we stay with our studio at Dhaka city thanks CML Consolidation & Logistics Services Ltd.
 
                                     </blockquote>
                                     <div class="arrow-down"></div>
                                     <div class="testi-by">
-                                        <img src="{{asset('frontend')}}/img/about/testimonials/testimonial-3.jpg" class="img-circle" alt="">
-                                        <span class="name"><strong>Mike Martien</strong>, Web Designer<br>
-                                            Bamskies Studio</span>
+                                        <img src="{{asset('frontend')}}/img/collection/profile/IMG_7229-web-min.jpg" class="img-circle" alt="">
+                                        <span class="name"><strong>Azmain Bhuiyan</strong>, Director<br>
+                                            Business Development</span>
                                     </div>
                                 </div>
 

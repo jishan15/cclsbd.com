@@ -189,8 +189,8 @@
                             <h1>Timeline</h1>
                             <div class="crumb">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="{{ url('/about')}}">About</a></li>
                                     <li>Timeline</li>
                                 </ul>
                             </div>
@@ -218,16 +218,17 @@
                         <div class="divider-single"></div>
 
                         <ul class="timeline-year">
+                            @foreach($timelines as $key=>$timeline)
                             <li>
-                                <div class="num">2015</div>
+                                <div class="num">{{$timeline->year}}</div>
                                 <div class="post">
-                                    <h4><span class="date">June, 22</span> Best Freight Forwarding</h4>
-                                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti </p>
+                                    <h4><span class="date">{{$timeline->date}}</span> {{$timeline->title}}</h4>
+                                    <p>{{$timeline->sub_title}} </p>
                                 </div>
                                 <div class="clearfix"></div>
                             </li>
-
-                            <li>
+                            @endforeach
+                            {{-- <li>
                                 <div class="num">2012</div>
                                 <div class="post">
                                     <img src="img/misc/truck-1.jpg" alt="" class="pull-left">
@@ -274,7 +275,7 @@
                                 </div>
 
                                 <div class="clearfix"></div>
-                            </li>
+                            </li> --}}
                         </ul>
 
                         <div class="divider-double"></div>
@@ -284,11 +285,11 @@
                         <div class="widget">
                             <ul class="side-nav">
                                 <li><a href="company.html">Company</a></li>
-                                <li><a href="people.html">People</a></li>
-                                <li class="active"><a href="history.html">Timeline</a></li>
+                                <li><a href="{{ url('/executive')}}">Executive</a></li>
+                                <li class="active"><a href="{{ url('/timeline')}}">Timeline</a></li>
                                 <li><a href="testimonial.html">Testimonials</a></li>
-                                <li><a href="careers.html">Careers</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
+                              
+                                <li><a href="{{url('/faq')}}">FAQ</a></li>
                             </ul>
                         </div>
 
@@ -296,44 +297,21 @@
                             <h3>Latest News</h3>
 
                             <ul class="news-list-date">
+                                @foreach($newstimelines as $newstimeline)
                                 <li>
                                     <div class="date">
-                                        <span class="day">19</span>
-                                        <span class="month">Aug</span>
+                                        <span class="day">{{$newstimeline->date}}</span>
+                                        <span class="month">{{$newstimeline->month}}</span>
                                     </div>
                                     <div class="text">
                                         <a href="#">
-                                            <h4>We Opening New Branch</h4>
+                                            <h4>{{$newstimeline->title}}</h4>
                                         </a>
-                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
+                                        <p>{{$newstimeline->sub_title}}</p>
                                     </div>
                                 </li>
-
-                                <li>
-                                    <div class="date">
-                                        <span class="day">18</span>
-                                        <span class="month">Aug</span>
-                                    </div>
-                                    <div class="text">
-                                        <a href="#">
-                                            <h4>Estimate Shipping Cost</h4>
-                                        </a>
-                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="date">
-                                        <span class="day">17</span>
-                                        <span class="month">Aug</span>
-                                    </div>
-                                    <div class="text">
-                                        <a href="#">
-                                            <h4>Tracking From Mobile Phone</h4>
-                                        </a>
-                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem</p>
-                                    </div>
-                                </li>
+                                @endforeach
+                               
                             </ul>
                         </div>
                     </div>

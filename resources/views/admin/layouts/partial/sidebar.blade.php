@@ -6,8 +6,8 @@
         </div>
         <div class="nk-sidebar-brand">
             <a href="html/index.html" class="logo-link nk-sidebar-logo">
-                <img class="logo-light logo-img" src="{{asset('backend')}}/images/" srcset="./images/logo2x.png 2x" alt="logo">
-                <img class="logo-dark logo-img" src="{{asset('backend')}}/images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+                <img class="logo-light logo-img" src="{{ asset('backend')}}/images\Logo_CCLS-4.png" srcset="./images/logo2x.png 2x" alt="logo">
+                <img class="logo-dark logo-img" src="{{ asset('backend')}}/images\Logo_CCLS-4.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
             </a>
         </div>
     </div><!-- .nk-sidebar-element -->
@@ -15,11 +15,11 @@
         <div class="nk-sidebar-content">
             <div class="nk-sidebar-menu" data-simplebar>
                 <ul class="nk-menu">
-                    <!-- .nk-menu-item -->
+                   <!-- .nk-menu-item -->
                     <li class="nk-menu-heading">
                         <h6 class="overline-title text-primary-alt">Dashboards</h6>
                     </li><!-- .nk-menu-item -->
-                    <!-- .nk-menu-item -->
+                    
                     <!-- .nk-menu-heading -->
                     <li class="nk-menu-item has-sub">
                         <a href="#" class="nk-menu-link nk-menu-toggle">
@@ -28,37 +28,89 @@
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="html/project-card.html" class="nk-menu-link"><span class="nk-menu-text">All news</span></a>
+                                <a href="{{ route('newsroom.index')}}" class="nk-menu-link"><span class="nk-menu-text">All news</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/project-card.html" class="nk-menu-link"><span class="nk-menu-text">Create News</span></a>
+                                <a href="{{ route('newsroom.create')}}" class="nk-menu-link"><span class="nk-menu-text">Create News</span></a>
                             </li>
                            
                         </ul><!-- .nk-menu-sub -->
                     </li><!-- .nk-menu-item -->
                     <li class="nk-menu-item has-sub">
                         <a href="#" class="nk-menu-link nk-menu-toggle">
-                            <span class="nk-menu-icon"><em class="icon ni ni-users"></em></span>
-                            <span class="nk-menu-text">User Manage</span>
-                        </a>
-                      <!-- .nk-menu-sub -->
-                    </li><!-- .nk-menu-item -->
-                    <li class="nk-menu-item has-sub">
-                        <a href="#" class="nk-menu-link nk-menu-toggle">
-                            <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
-                            <span class="nk-menu-text">AML / KYCs</span>
+                            <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
+                            <span class="nk-menu-text">Contact</span>
                         </a>
                         <ul class="nk-menu-sub">
                             <li class="nk-menu-item">
-                                <a href="html/kyc-list-regular.html" class="nk-menu-link"><span class="nk-menu-text">KYC List - Regular</span></a>
+                                <a href="{{ route('contact.index')}}" class="nk-menu-link"><span class="nk-menu-text">All Contact</span></a>
+                            </li>
+                           
+                           
+                        </ul>
+                        <!-- .nk-menu-sub -->
+                    </li>
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                            <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
+                            <span class="nk-menu-text">Timeline</span>
+                        </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="{{ route('timeline.index')}}" class="nk-menu-link"><span class="nk-menu-text">All timeline</span></a>
                             </li>
                             <li class="nk-menu-item">
-                                <a href="html/kyc-details-regular.html" class="nk-menu-link"><span class="nk-menu-text">KYC Details - Regular</span></a>
+                                <a href="{{ route('timeline.create')}}" class="nk-menu-link"><span class="nk-menu-text">Create timeline</span></a>
                             </li>
+                           
                         </ul><!-- .nk-menu-sub -->
-                    </li><!-- .nk-menu-item -->
-                   <!-- .nk-menu-item -->
-                   
+                    </li>
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                            <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
+                            <span class="nk-menu-text">News for executive</span>
+                        </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="{{ route('executive.index')}}" class="nk-menu-link"><span class="nk-menu-text">All Latest News</span></a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="{{ route('executive.create')}}" class="nk-menu-link"><span class="nk-menu-text">Create Latest News</span></a>
+                            </li>
+                           
+                        </ul><!-- .nk-menu-sub -->
+                    </li>
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                            <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
+                            <span class="nk-menu-text">News for Timeline</span>
+                        </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="{{ route('newstimeline.index')}}" class="nk-menu-link"><span class="nk-menu-text">All Latest News</span></a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="{{ route('newstimeline.create')}}" class="nk-menu-link"><span class="nk-menu-text">Create Latest News</span></a>
+                            </li>
+                           
+                        </ul><!-- .nk-menu-sub -->
+                    </li>
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                            <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
+                            <span class="nk-menu-text">News for Testominals</span>
+                        </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="{{ route('newtestimonals.index')}}" class="nk-menu-link"><span class="nk-menu-text">All Latest News</span></a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="{{ route('newtestimonals.create')}}" class="nk-menu-link"><span class="nk-menu-text">Create Latest News</span></a>
+                            </li>
+                           
+                        </ul><!-- .nk-menu-sub -->
+                    </li>
+                    
                 </ul><!-- .nk-menu -->
             </div><!-- .nk-sidebar-menu -->
         </div><!-- .nk-sidebar-content -->
