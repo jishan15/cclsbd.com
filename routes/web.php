@@ -11,6 +11,9 @@ use App\Http\Controllers\Admin\NewsroomController;
 use App\Http\Controllers\Admin\NewsExecutiveController;
 use App\Http\Controllers\Admin\NewsTimelineController;
 use App\Http\Controllers\Admin\NewsTestimonalsController;
+use App\Http\Controllers\Admin\TestimonalController;
+use App\Http\Controllers\Admin\GeneralAdvisoriesController;
+use App\Http\Controllers\Admin\InternationalAdvisoriesController;
 
 // use App\Models\Newsroom;
 /*
@@ -36,6 +39,8 @@ Route::get('/timeline', [App\Http\Controllers\WelcomeController::class, 'timelin
 // Route::get('/newstimeline', [App\Http\Controllers\WelcomeController::class, 'newsTimeline']);
 Route::get('/executive', [App\Http\Controllers\WelcomeController::class, 'executive']);
 Route::get('/testimonials', [App\Http\Controllers\WelcomeController::class, 'testimonials']);
+Route::get('/general-advisories', [App\Http\Controllers\WelcomeController::class, 'general_advisories']);
+Route::get('/international-advisories', [App\Http\Controllers\WelcomeController::class, 'international_advisories']);
 Route::get('/ocean-freight', function () {
     return view('ocean');
 });
@@ -140,6 +145,16 @@ Route::get('/faq', function () {
 Route::get('/careers', function () {
     return view('careers');
 });
+
+// Route::get('/general-advisories', function () {
+//     return view('general-advisories');
+// });
+// Route::get('/international-advisories', function () {
+//     return view('international-advisories');
+// });
+Route::get('/feedback', function () {
+    return view('feedback');
+});
 // Route::get('/news', function () {
 //     return view('news');
 // });
@@ -206,14 +221,34 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
      Route::get('/newtestimonals/edit/{id}',[NewsTestimonalsController::class,'edit'])->name('newtestimonals.edit');
      Route::post('/newtestimonals/update/{id}',[NewsTestimonalsController::class,'update'])->name('newtestimonals.update');
      Route::delete('/newtestimonals/destroy/{id}',[NewsTestimonalsController::class,'destroy'])->name('newtestimonals.destroy');
+
+     //Testimonal route
+     Route::get('/testimonal',[TestimonalController::class,'index'])->name('testimonal.index');
+     Route::get('/testimonal/create',[TestimonalController::class,'create'])->name('testimonal.create');
+     Route::post('/testimonal/store',[TestimonalController::class,'store'])->name('testimonal.store');
+     Route::get('/testimonal/edit/{id}',[TestimonalController::class,'edit'])->name('testimonal.edit');
+     Route::post('/testimonal/update/{id}',[TestimonalController::class,'update'])->name('testimonal.update');
+     Route::delete('/testimonal/destroy/{id}',[TestimonalController::class,'destroy'])->name('testimonal.destroy');
+
+
+     //General Advisories route
+     Route::get('/generalAdvisories',[GeneralAdvisoriesController::class,'index'])->name('generalAdvisories.index');
+     Route::get('/generalAdvisories/create',[GeneralAdvisoriesController::class,'create'])->name('generalAdvisories.create');
+     Route::post('/generalAdvisories/store',[GeneralAdvisoriesController::class,'store'])->name('generalAdvisories.store');
+     Route::get('/generalAdvisories/edit/{id}',[GeneralAdvisoriesController::class,'edit'])->name('generalAdvisories.edit');
+     Route::post('/generalAdvisories/update/{id}',[GeneralAdvisoriesController::class,'update'])->name('generalAdvisories.update');
+     Route::delete('/generalAdvisories/destroy/{id}',[GeneralAdvisoriesController::class,'destroy'])->name('generalAdvisories.destroy');
+
+
+
+       //General Advisories route
+       Route::get('/internationalAdvisories',[InternationalAdvisoriesController::class,'index'])->name('internationalAdvisories.index');
+       Route::get('/internationalAdvisories/create',[InternationalAdvisoriesController::class,'create'])->name('internationalAdvisories.create');
+       Route::post('/internationalAdvisories/store',[InternationalAdvisoriesController::class,'store'])->name('internationalAdvisories.store');
+       Route::get('/internationalAdvisories/edit/{id}',[InternationalAdvisoriesController::class,'edit'])->name('internationalAdvisories.edit');
+       Route::post('/internationalAdvisories/update/{id}',[InternationalAdvisoriesController::class,'update'])->name('internationalAdvisories.update');
+       Route::delete('/internationalAdvisories/destroy/{id}',[InternationalAdvisoriesController::class,'destroy'])->name('internationalAdvisories.destroy');
 });
-  
-
-
-
-
-
-
 Auth::routes();
 
 

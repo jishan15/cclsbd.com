@@ -89,14 +89,14 @@
                                 <li><a href="/">Home</a></li>
                                 <li><a href="{{url('/about')}}">About Us</a>
                                     <ul>
-                                        <li><a href="#">OUR WORK</a>
-                                        <li><a href="#">OUR MISSION</a>
-                                        <li><a href="#">OUR APPROCH</a>
+                                        <li><a href="{{ url('/work')}}">OUR WORK</a>
+                                        <li><a href="{{ url('/mission')}}">OUR MISSION</a>
+                                        <li><a href="{{ url('/approch')}}">OUR APPROCH</a>
                                         <li><a href="{{ url('/executive')}}">EXECUTIVE TEAM</a>
                                         <li><a href="{{ url('/timeline')}}">TIMELINE</a>
-                                        <li><a href="#">CARRIERS</a>
+                                        <li><a href="{{ url('/carriers')}}">CARRIERS</a>
                                         <li><a href="{{ url('/gellary')}}">GALLERY</a>
-                                        <li><a href="#">AWARDS & CERTIFICATES</a>
+                                        <li><a href="{{ url('/awards')}}">AWARDS & CERTIFICATES</a>
                                         <li><a href="{{ url('/testimonials')}}">TESTIMONIALS</a></li>
                                     </ul>
                                 </li>
@@ -149,15 +149,15 @@
 
                                 <li><a href="#">Customer Tools</a>
                                     <ul>
-                                        <li><a href="services.html">ADVISORIES</a>
+                                        <li><a href="">ADVISORIES</a>
                                             <ul>
-                                                <li><a href="#">GENERAL ADVISORIES</a></li>
-                                                <li><a href="#">INTERNATIONAL ADVISORIES</a></li>
+                                                <li><a href="{{ url('/general-advisories')}}">GENERAL ADVISORIES</a></li>
+                                                <li><a href="{{ url('/international-advisories')}}">INTERNATIONAL ADVISORIES</a></li>
                                                 <li><a href="#">HOLIDAY NOTICES</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="https://scddac.webtracker.wisegrid.net/Login/Login.aspx?ReturnUrl=%2fDefault.aspx">TRACKING CENTER</a></li>
-                                        <li><a href="https://scddac.webtracker.wisegrid.net/Login/Login.aspx?ReturnUrl=%2fDefault.aspx">BOOK A SHIPMENT</a></li>
+                                        <li><a href="https://ccls.cargoaim.com/">BOOK A SHIPMENT</a></li>
                                         <li><a href="#">GIVE US FEEDBACK</a></li> 
                                         </li>
                                     </ul>
@@ -166,8 +166,8 @@
                                 <li><a href="{{ url('/contact')}}">Contact</a></li>
                                 <li><a href="#">Resource</a>
                                     <ul>
-                                        <li><a href="#">DOWNLOAD</a></li>
-                                        <li><a href="#">GLOSSARY</a></li>
+                                        <li><a href="{{ url('/dowonload')}}">DOWNLOAD</a></li>
+                                        <li><a href="{{ url('/glossary')}}">GLOSSARY</a></li>
                                         <li><a href="{{url('/faq')}}">F.A.Q</a></li>
                                     </ul>
                                 </li>
@@ -482,7 +482,7 @@
 
                        <h4>CargoWise One</h4>
                        <p>CargoWise One developed by WiseTech Global has a robust web-based tracking facility that allows you to track the status of shipments or orders quickly with ease in real time.</p>
-                       <a href="https://scddac.webtracker.wisegrid.net/Login/Login.aspx?ReturnUrl=%2fDefault.aspx" class="btn btn-lg btn-primary mt-3" style="background-color: #d21362;">
+                       <a href="https://scddac.webtracker.wisegrid.net/Login/Login.aspx?ReturnUrl=%2fDefault.aspx"  class="btn btn-lg btn-primary mt-3" style="background-color: #d21362;" target="_blank" rel="noopener noreferrer">
                         TRACK NOW</a>
                     </div>
                    </div>

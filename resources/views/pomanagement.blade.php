@@ -66,8 +66,8 @@
                         <div id="logo">
                             <div class="inner">
                                 <a href="index.html">
-                                    <img src="img/cml-logo.png" alt="" class="logo-1">
-                                    <img src="img/cml-logo.png" alt="" class="logo-2">
+                                    <img src="{{asset('frontend')}}/img/cml-logo.png" alt="" class="logo-1">
+                                    <img src="{{asset('frontend')}}/img/cml-logo.png" alt="" class="logo-2">
                                 </a>
 
                             </div>
@@ -84,14 +84,14 @@
                                 <li><a href="/">Home</a></li>
                                 <li><a href="{{url('/about')}}">About Us</a>
                                     <ul>
-                                        <li><a href="#">OUR WORK</a>
-                                        <li><a href="#">OUR MISSION</a>
-                                        <li><a href="#">OUR APPROCH</a>
+                                        <li><a href="{{ url('/work')}}">OUR WORK</a>
+                                        <li><a href="{{ url('/mission')}}">OUR MISSION</a>
+                                        <li><a href="{{ url('/approch')}}">OUR APPROCH</a>
                                         <li><a href="{{ url('/executive')}}">EXECUTIVE TEAM</a>
                                         <li><a href="{{ url('/timeline')}}">TIMELINE</a>
-                                        <li><a href="#">CARRIERS</a>
+                                        <li><a href="{{ url('/carriers')}}">CARRIERS</a>
                                         <li><a href="{{ url('/gellary')}}">GALLERY</a>
-                                        <li><a href="#">AWARDS & CERTIFICATES</a>
+                                        <li><a href="{{ url('/awards')}}">AWARDS & CERTIFICATES</a>
                                         <li><a href="{{ url('/testimonials')}}">TESTIMONIALS</a></li>
                                     </ul>
                                 </li>
@@ -161,8 +161,8 @@
                                 <li><a href="{{ url('/contact')}}">Contact</a></li>
                                 <li><a href="#">Resource</a>
                                     <ul>
-                                        <li><a href="#">DOWNLOAD</a></li>
-                                        <li><a href="#">GLOSSARY</a></li>
+                                        <li><a href="{{ url('/dowonload')}}">DOWNLOAD</a></li>
+                                        <li><a href="{{ url('/glossary')}}">GLOSSARY</a></li>
                                         <li><a href="{{url('/faq')}}">F.A.Q</a></li>
                                     </ul>
                                 </li>

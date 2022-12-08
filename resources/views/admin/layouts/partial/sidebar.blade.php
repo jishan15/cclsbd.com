@@ -68,6 +68,21 @@
                     <li class="nk-menu-item has-sub">
                         <a href="#" class="nk-menu-link nk-menu-toggle">
                             <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
+                            <span class="nk-menu-text">Testominals</span>
+                        </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="{{ route('testimonal.index')}}" class="nk-menu-link"><span class="nk-menu-text">All  Testominals</span></a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="{{ route('testimonal.create')}}" class="nk-menu-link"><span class="nk-menu-text">Create Testominals</span></a>
+                            </li>
+                           
+                        </ul><!-- .nk-menu-sub -->
+                    </li>
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                            <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
                             <span class="nk-menu-text">News for executive</span>
                         </a>
                         <ul class="nk-menu-sub">
@@ -110,6 +125,37 @@
                            
                         </ul><!-- .nk-menu-sub -->
                     </li>
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                            <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
+                            <span class="nk-menu-text">General Advisories</span>
+                        </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="{{ route('generalAdvisories.index')}}" class="nk-menu-link"><span class="nk-menu-text">All General Advisories</span></a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="{{ route('generalAdvisories.create')}}" class="nk-menu-link"><span class="nk-menu-text">Create General Advisories</span></a>
+                            </li>
+                           
+                        </ul><!-- .nk-menu-sub -->
+                    </li>
+                    <li class="nk-menu-item has-sub">
+                        <a href="#" class="nk-menu-link nk-menu-toggle">
+                            <span class="nk-menu-icon"><em class="icon ni ni-tile-thumb"></em></span>
+                            <span class="nk-menu-text">International Advisories</span>
+                        </a>
+                        <ul class="nk-menu-sub">
+                            <li class="nk-menu-item">
+                                <a href="{{ route('internationalAdvisories.index')}}" class="nk-menu-link"><span class="nk-menu-text">All International Advisories</span></a>
+                            </li>
+                            <li class="nk-menu-item">
+                                <a href="{{ route('internationalAdvisories.create')}}" class="nk-menu-link"><span class="nk-menu-text">Create International Advisories</span></a>
+                            </li>
+                           
+                        </ul><!-- .nk-menu-sub -->
+                    </li>
+                    
                     
                 </ul><!-- .nk-menu -->
             </div><!-- .nk-sidebar-menu -->

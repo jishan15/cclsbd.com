@@ -87,14 +87,14 @@
                                 <li><a href="/">Home</a></li>
                                 <li><a href="{{url('/about')}}">About Us</a>
                                     <ul>
-                                        <li><a href="#">OUR WORK</a>
-                                        <li><a href="#">OUR MISSION</a>
-                                        <li><a href="#">OUR APPROCH</a>
+                                        <li><a href="{{ url('/work')}}">OUR WORK</a>
+                                        <li><a href="{{ url('/mission')}}">OUR MISSION</a>
+                                        <li><a href="{{ url('/approch')}}">OUR APPROCH</a>
                                         <li><a href="{{ url('/executive')}}">EXECUTIVE TEAM</a>
                                         <li><a href="{{ url('/timeline')}}">TIMELINE</a>
-                                        <li><a href="#">CARRIERS</a>
+                                        <li><a href="{{ url('/carriers')}}">CARRIERS</a>
                                         <li><a href="{{ url('/gellary')}}">GALLERY</a>
-                                        <li><a href="#">AWARDS & CERTIFICATES</a>
+                                        <li><a href="{{ url('/awards')}}">AWARDS & CERTIFICATES</a>
                                         <li><a href="{{ url('/testimonials')}}">TESTIMONIALS</a></li>
                                     </ul>
                                 </li>
@@ -164,8 +164,8 @@
                                 <li><a href="{{ url('/contact')}}">Contact</a></li>
                                 <li><a href="#">Resource</a>
                                     <ul>
-                                        <li><a href="#">DOWNLOAD</a></li>
-                                        <li><a href="#">GLOSSARY</a></li>
+                                        <li><a href="{{ url('/dowonload')}}">DOWNLOAD</a></li>
+                                        <li><a href="{{ url('/glossary')}}">GLOSSARY</a></li>
                                         <li><a href="{{url('/faq')}}">F.A.Q</a></li>
                                     </ul>
                                 </li>
@@ -211,22 +211,25 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="row">
-                            <div class="col-lg-12">
+                            @foreach ($testimonals as $testimonal)
+                            <div class="col-lg-12 mt-2">
                                 <div class="testi-box-1">
                                     <blockquote>
-                                        CML Consolidation & Logistics Services Ltd's people professional and courteous attitude, expert knowledge and patience handling our specific issues are very important to our customer.
+                                        {{$testimonal->sub_title}}
 
                                     </blockquote>
                                     
                                     <div class="testi-by">
-                                        <img src="{{asset('frontend')}}/img/collection/profile/Ariful-Ahsan-MD-SCL.jpg" class="img-circle" alt="">
-                                        <span class="name"><strong>Ariful Ahsan</strong>,Managing Director<br>
+                                        <img src="{{asset('uploads/testimonal/'.$testimonal->image)}}" class="img-fluid" alt="" >
+                                        <span class="name"><strong>{{$testimonal->name}}</strong>,{{$testimonal->designation}}<br>
                                            </span>
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
+                           
 
-                            <div class="col-lg-12 mt-4">
+                            {{-- <div class="col-lg-12 mt-4">
                                 <div class="testi-box-1">
                                     <blockquote>
                                         Your representatives have very helpful attitude and their attention to detail help us to move our work smoothly without any delay...good job guys.
@@ -257,77 +260,7 @@
                                             Business Development</span>
                                     </div>
                                 </div>
-                            </div>
-
-                            {{-- <div class="col-md-6">
-                                <div class="testi-box-1">
-                                    <blockquote>
-                                        Thank you very much awesome jobs, I will recommend everybody to use your company because you know excellent your job and you are professionals.
-
-                                    </blockquote>
-                                    
-                                    <div class="testi-by">
-                                        <img src="img/about/testimonials/testimonial-4.jpg" class="img-circle" alt="">
-                                        <span class="name"><strong>Steve Powers</strong>, Producer<br>
-                                            Alisa Entertainment</span>
-                                    </div>
-                                </div>
                             </div> --}}
-s
-                            {{-- <div class="col-md-6">
-                                <div class="testi-box-1">
-                                    <blockquote>
-                                        Your staff is very, very friendly and helpful. I will recommend your service to all my friends back in the Greenland. Keep up the good work.
-
-                                    </blockquote>
-                                    
-                                    <div class="testi-by">
-                                        <img src="img/about/testimonials/testimonial-5.jpg" class="img-circle" alt="">
-                                        <span class="name"><strong>Natalia Romanaf</strong>, Wedding Planner<br>
-                                            R & R</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="testi-box-1">
-                                    <blockquote>
-                                        Thanks you so much am all smiles right now they really did deliver the stuff. I will have no problems recommending you to any friends.
-
-                                    </blockquote>
-                                    <div class="arrow-down"></div>
-                                    <div class="testi-by">
-                                        <img src="img/about/testimonials/testimonial-6.jpg" class="img-circle" alt="">
-                                        <span class="name"><strong>Erin Chang</strong>, Curator<br>
-                                            Trinil Museum</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="divider-single"></div>
-
-                            <div class="col-md-6">
-                                <div class="testi-box-1">
-                                    <blockquote>
-                                        Your representatives have very helpful attitude and their attention to detail help us to move our work smoothly without any delay...good job guys.
-
-
-                                    </blockquote>
-                                    <div class="arrow-down"></div>
-                                    <div class="testi-by">
-                                        <img src="img/about/testimonials/testimonial-7.jpg" class="img-circle" alt="">
-                                        <span class="name"><strong>Dave Smith</strong>, Sales Manager<br>
-                                            Jepara Furniture</span>
-                                    </div>
-                                </div>
-                            </div> --}}
-
-
-                          
-
-
-
-                            {{-- <div class="divider-single"></div> --}}
 
                         </div>
                     </div>
@@ -335,9 +268,9 @@ s
 					<div class="col-md-4">
                         <div class="widget">
                             <ul class="side-nav">
-                                <li><a href="">Company</a></li>
+                                {{-- <li><a href="">Company</a></li> --}}
                                 <li><a href="{{url('/executive')}}">Executive</a></li>
-                                <li><a href="">History</a></li>
+                                {{-- <li><a href="">History</a></li> --}}
                                 <li class="active"><a href="{{url('/testimonials')}}">Testimonials</a></li>
                                 <li><a href="">Careers</a></li>
                                 <li><a href="{{ url('/faq')}}">FAQ</a></li>

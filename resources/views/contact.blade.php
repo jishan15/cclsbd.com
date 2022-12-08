@@ -84,14 +84,14 @@
                                 <li><a href="/">Home</a></li>
                                 <li><a href="{{url('/about')}}">About Us</a>
                                     <ul>
-                                        <li><a href="#">OUR WORK</a>
-                                        <li><a href="#">OUR MISSION</a>
-                                        <li><a href="#">OUR APPROCH</a>
+                                        <li><a href="{{ url('/work')}}">OUR WORK</a>
+                                        <li><a href="{{ url('/mission')}}">OUR MISSION</a>
+                                        <li><a href="{{ url('/approch')}}">OUR APPROCH</a>
                                         <li><a href="{{ url('/executive')}}">EXECUTIVE TEAM</a>
                                         <li><a href="{{ url('/timeline')}}">TIMELINE</a>
-                                        <li><a href="#">CARRIERS</a>
+                                        <li><a href="{{ url('/carriers')}}">CARRIERS</a>
                                         <li><a href="{{ url('/gellary')}}">GALLERY</a>
-                                        <li><a href="#">AWARDS & CERTIFICATES</a>
+                                        <li><a href="{{ url('/awards')}}">AWARDS & CERTIFICATES</a>
                                         <li><a href="{{ url('/testimonials')}}">TESTIMONIALS</a></li>
                                     </ul>
                                 </li>
@@ -161,8 +161,8 @@
                                 <li><a href="{{ url('/contact')}}">Contact</a></li>
                                 <li><a href="#">Resource</a>
                                     <ul>
-                                        <li><a href="#">DOWNLOAD</a></li>
-                                        <li><a href="#">GLOSSARY</a></li>
+                                        <li><a href="{{ url('/dowonload')}}">DOWNLOAD</a></li>
+                                        <li><a href="{{ url('/glossary')}}">GLOSSARY</a></li>
                                         <li><a href="{{url('/faq')}}">F.A.Q</a></li>
                                     </ul>
                                 </li>
@@ -190,8 +190,8 @@
                             <h1>Contact</h1>
                             <div class="crumb">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li>Contact</li>
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="{{ url('/contact')}}">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -319,14 +319,14 @@
                         <div class="col-lg-8">
                             <form  class="row form-transparent"  method="POST" action="{{Route('contact')}}">
                                 @if ($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
+                              <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                             <li>{{ $error }}</li>
+                                        @endforeach
+                                 </ul>
+                                </div>
+                                @endif
                                 @csrf
                                 <div class="col-md-6">
                                     <input type="text" class="form-control" name="first_name"  placeholder="First Name*" /></div>

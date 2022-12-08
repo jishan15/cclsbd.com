@@ -84,14 +84,14 @@
                                 <li><a href="/">Home</a></li>
                                 <li><a href="{{url('/about')}}">About Us</a>
                                     <ul>
-                                        <li><a href="#">OUR WORK</a>
-                                        <li><a href="#">OUR MISSION</a>
-                                        <li><a href="#">OUR APPROCH</a>
+                                        <li><a href="{{ url('/work')}}">OUR WORK</a>
+                                        <li><a href="{{ url('/mission')}}">OUR MISSION</a>
+                                        <li><a href="{{ url('/approch')}}">OUR APPROCH</a>
                                         <li><a href="{{ url('/executive')}}">EXECUTIVE TEAM</a>
                                         <li><a href="{{ url('/timeline')}}">TIMELINE</a>
-                                        <li><a href="#">CARRIERS</a>
+                                        <li><a href="{{ url('/carriers')}}">CARRIERS</a>
                                         <li><a href="{{ url('/gellary')}}">GALLERY</a>
-                                        <li><a href="#">AWARDS & CERTIFICATES</a>
+                                        <li><a href="{{ url('/awards')}}">AWARDS & CERTIFICATES</a>
                                         <li><a href="{{ url('/testimonials')}}">TESTIMONIALS</a></li>
                                     </ul>
                                 </li>
@@ -144,7 +144,7 @@
 
                                 <li><a href="#">Customer Tools</a>
                                     <ul>
-                                        <li><a href="">ADVISORIES</a>
+                                        <li><a href="services.html">ADVISORIES</a>
                                             <ul>
                                                 <li><a href="#">GENERAL ADVISORIES</a></li>
                                                 <li><a href="#">INTERNATIONAL ADVISORIES</a></li>
@@ -161,8 +161,8 @@
                                 <li><a href="{{ url('/contact')}}">Contact</a></li>
                                 <li><a href="#">Resource</a>
                                     <ul>
-                                        <li><a href="#">DOWNLOAD</a></li>
-                                        <li><a href="#">GLOSSARY</a></li>
+                                        <li><a href="{{ url('/dowonload')}}">DOWNLOAD</a></li>
+                                        <li><a href="{{ url('/glossary')}}">GLOSSARY</a></li>
                                         <li><a href="{{url('/faq')}}">F.A.Q</a></li>
                                     </ul>
                                 </li>
@@ -358,20 +358,21 @@
                             <h3>Testimonials</h3>
 
                             <div id="testi-carousel-2" class="testi-slider wow fadeIn" data-wow-delay="0s" data-wow-duration="1s">
+                                @foreach($testimonals as $testimonal)
                                 <div class="item">
                                     <blockquote>
-                                        CCLS's people professional and courteous attitude, expert knowledge and patience handling our specific issues are very important to our customer
+                                        {{$testimonal->sub_title}}
 
                                     </blockquote>
                                     <div class="arrow-down"></div>
                                     <div class="testi-by">
-                                        <img src="{{asset('frontend')}}/img/collection/profile/Ariful-Ahsan-MD-SCL.jpg" class="img-circle" alt="">
-                                        <span class="name"><strong>Ariful Islam</strong>, Managing Director<br>
+                                        <img src="{{asset('uploads/testimonal/'.$testimonal->image)}}" class="img-circle" alt="">
+                                        <span class="name"><strong>{{$testimonal->name}}</strong>, {{$testimonal->designation}}<br>
                                             </span>
                                     </div>
                                 </div>
-
-                                <div class="item">
+                                @endforeach
+                                {{-- <div class="item">
                                     <blockquote>
                                         Your representatives have very helpful attitude and their attention to detail help us to move our work smoothly without any delay...good job guys
 
@@ -395,7 +396,7 @@
                                         <span class="name"><strong>Azmain Bhuiyan</strong>, Director<br>
                                             Business Development</span>
                                     </div>
-                                </div>
+                                </div> --}}
 
                             </div>
 

@@ -9,6 +9,10 @@ use App\Models\Timeline;
 use App\Models\Executive_news;
 use App\Models\Timeline_news;
 use App\Models\Testimonal_news;
+use App\Models\Testimonials;
+use App\Models\GeneralAdvisories;
+use App\Models\International_advisories;
+
 
 
 
@@ -32,18 +36,13 @@ class WelcomeController extends Controller
         return view('/timeline',compact('timelines','newstimelines'));
     } 
 
-    // public function newsTimeline()
-    // {
-    //     $newstimelines = Timeline_news::all();
-    //     return view('/timeline',compact('$newstimelines'));
-    // }
-
+    
     public function executive()
     {
+        $testimonals = Testimonials::all();
         $executives = Executive_news::all();
-        return view('/executive',compact('executives'));
+        return view('/executive',compact('executives','testimonals'));
     }
-
     public function contacts()
     {
         return view('/contact');
@@ -51,8 +50,19 @@ class WelcomeController extends Controller
 
     public function testimonials()
     {
+        $testimonals = Testimonials::all();
         $newstestimonals = Testimonal_news::all();
-        return view('/testimonials',compact('newstestimonals'));
+        return view('/testimonials',compact('testimonals','newstestimonals'));
+    }
+    public function general_advisories()
+    {
+        $generalAdvisories = GeneralAdvisories::all();
+        return view('/general-advisories',compact('generalAdvisories'));
+    }
+    public function international_advisories()
+    {
+        $internationalAdvisories = International_advisories::all();
+        return view('/international-advisories',compact('internationalAdvisories'));
     }
     public function contact(Request $request)
    {
@@ -72,22 +82,5 @@ class WelcomeController extends Controller
         $contact->save();
         return redirect()->back()->with('success','successfully.');
    }
-//     public function contact(Request $request)
-//    {
-//         $this->validate($request,[
-//             'first_name' => 'required',
-//             'last_name' => 'required',
-//             'email' => 'required',
-//             'phone' => 'required',
-//             'message' => 'required',
-//         ]);
-//         $contact = new Contact();
-//         $contact->first_name = $request->first_name;
-//         $contact->last_name = $request->last_name;
-//         $contact->email = $request->email;
-//         $contact->subject = $request->subject;
-//         $contact->message = $request->message;
-//         $contact->save();
-//         return redirect()->back();
-//    }
+  
 }
