@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -171,7 +170,6 @@
                             </ul>
                         </nav>
                         <!-- mainmenu close -->
-
                     </div>
                 </div>
             </div>
@@ -184,13 +182,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1>Pharmaceutical</h1>
+                            <h1>Visibility</h1>
                             <div class="crumb">
                                 <ul>
                                     <li><a href="/">Home</a></li>
-                                    <li><a href="{{ url('/services')}}">Services</a></li>
-                                    <li><a href="{{ url('/specialized')}}">Specialized Services</a></li>
-                                    <li>Pharmaceutical</li>
+                                    <li><a href="{{ url('/visibility')}}">Visibility</a></li>
+                                  
                                 </ul>
                             </div>
                         </div>
@@ -203,53 +200,25 @@
         <div class="clearfix"></div>
 
         <!-- content begin -->
-        <div id="content">
+        <div id="content" class="text-dark">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
-
-                        <div class="owl-custom-nav">
-                            <a class="btn-prev"></a>
-                            <a class="btn-next"></a>
-                        </div>
-
+                    <div class="col-lg-12">
                         <div class="single-carousel-arrow-nav">
-                            <img src="{{asset('frontend')}}/img/collection/PHARMACEUTICAL/B2_PharmaLogisticsa.jpg" alt="" class="img-fluid" style="height: 320px; width: 100%;">
-                            <img src="{{asset('frontend')}}/img/collection/PHARMACEUTICAL/GettyImages-859526476.jpg" alt="" class="img-fluid" style="height: 320px; width: 100%;">
-                            <img src="{{asset('frontend')}}/img/collection/PHARMACEUTICAL/tempsure_img01.jpg" alt="" class="img-fluid" style="height: 320px; width: 100%;">
+                          
                         </div>
 
                         <div class="divider-single"></div>
 
-                        <h2>Pharmaceutical Services Details</h2>
+                        <h2>Visibility</h2>
                         <div class="divider-deco"><span></span></div>
-                        <p><strong><i>The pharmaceutical industry is complex and delicate, choosing the right Freight Forwarder can change the game</i></strong></p>
-                        <p class="text-dark">
-                            Freight forwarders are the ones responsible for managing all shipment documentation, coordinating with public carriers and providing status updates to carriers, customs, and business partners. They also play a vital role in the shipping life-cycle by ensuring that complete cargo data is delivered, bills of lading issued and accepted, and payments are received on time.
-                        </p>
-                        <h4>Effective Solutions</h4>
-                        <p class="text-dark">A complementary service to our pharmaceutical sector offering, Ferryspeed’s portfolio of specialist healthcare solutions has been developed with the very specific requirements of this unique market in mind</p>
+                        
+            
+                       
+                       
                     </div>
 					
-					<div class="col-md-4">
-                        <div class="widget">
-                            <ul class="side-nav">
-                                <li><a href="{{ url('/specialized')}}">All Specialized Services</a></li>
-                                <li><a href="{{ url('/specialized/door-delivery')}}">Door Delivery</a></li>
-                                <li  class="active"><a href="{{ url('/specialized/Pharmaceutical')}}">Pharmaceutical</a></li>
-                                <li><a href="{{ url('/specialized/seafood')}}">Sea Food</a></li>
-                                <li><a href="{{ url('/specialized/dggoods')}}">DG Goods</a></li>
-                                <!-- <li ><a href="service-details-1.html">Ocean Freight</a></li>
-                                <li class="active"><a href="service-details-2.html">Air Freight</a></li>
-                                <li><a href="consolidation.html">Consolidation</a></li>
-                                <li><a href="p.o.management.html">P.O.Management</a></li>
-                                <li><a href="service-details-3.html">Cargo Express</a></li>
-                                <li><a href="service-details-4.html">Contract Logistics</a></li>
-                                <li><a href="service-details-5.html">Warehousing</a></li>
-                                <li><a href="service-details-6.html">Custom Brokerage</a></li> -->
-                            </ul>
-                        </div>
-                    </div>
+				
                 </div>
             </div>
         </div>
@@ -344,4 +313,3 @@
 
 </body>
 </html>
-

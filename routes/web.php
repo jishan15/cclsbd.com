@@ -36,7 +36,6 @@ Route::get('/news', [App\Http\Controllers\WelcomeController::class, 'news']);
 Route::get('/contact', [App\Http\Controllers\WelcomeController::class, 'contacts']);
 Route::post('/contacts', [App\Http\Controllers\WelcomeController::class, 'contact'])->name('contact');
 Route::get('/timeline', [App\Http\Controllers\WelcomeController::class, 'timelines']);
-// Route::get('/newstimeline', [App\Http\Controllers\WelcomeController::class, 'newsTimeline']);
 Route::get('/executive', [App\Http\Controllers\WelcomeController::class, 'executive']);
 Route::get('/testimonials', [App\Http\Controllers\WelcomeController::class, 'testimonials']);
 Route::get('/general-advisories', [App\Http\Controllers\WelcomeController::class, 'general_advisories']);
@@ -110,13 +109,18 @@ Route::get('/glossary', function () {
 Route::get('/approch', function () {
     return view('approch');
 });
-// Route::get('/contact', function () {
-//     return view('contact');
-// });
+Route::get('/easy', function () {
+    return view('easy');
+});
+Route::get('/connected', function () {
+    return view('connected');
+});
+Route::get('/workflow', function () {
+    return view('workflow');
+});
 Route::get('/specialized/door-delivery', function () {
     return view('door');
 });
-
 Route::get('/specialized/Pharmaceutical', function () {
     return view('Pharmaceutical');
 });
@@ -129,36 +133,24 @@ Route::get('/specialized/dggoods', function () {
 Route::get('/gellary', function () {
     return view('gellary');
 });
-// Route::get('/executive', function () {
-//     return view('executive');
-// });
-// Route::get('/timeline', function () {
-
-//     return view('timeline');
-// });
-// Route::get('/testimonials', function () {
-//     return view('testimonials');
-// });
 Route::get('/faq', function () {
     return view('faq');
 });
 Route::get('/careers', function () {
     return view('careers');
 });
-
-// Route::get('/general-advisories', function () {
-//     return view('general-advisories');
-// });
-// Route::get('/international-advisories', function () {
-//     return view('international-advisories');
-// });
+Route::get('/e_services', function () {
+    return view('e_services');
+});
+Route::get('/visibility', function () {
+    return view('visibility');
+});
+Route::get('/business', function () {
+    return view('business');
+});
 Route::get('/feedback', function () {
     return view('feedback');
 });
-// Route::get('/news', function () {
-//     return view('news');
-// });
-
 Auth::routes();
   
 /*------------------------------------------
@@ -249,6 +241,6 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
        Route::post('/internationalAdvisories/update/{id}',[InternationalAdvisoriesController::class,'update'])->name('internationalAdvisories.update');
        Route::delete('/internationalAdvisories/destroy/{id}',[InternationalAdvisoriesController::class,'destroy'])->name('internationalAdvisories.destroy');
 });
-Auth::routes();
+
 
 

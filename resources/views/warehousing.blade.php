@@ -27,14 +27,12 @@
                                   Request A Quote
                                 </a>
                                 <ul class="dropdown-menu ">
-                                  <li><a class="dropdown-item" href="#"> Air Freight Forwarding</a></li>
-                                  <li><a class="dropdown-item" href="#">Ocean Freight Forwarding</a></li>
-                                  <li><a class="dropdown-item" href="#">Project Shipment</a></li>
-                                  <li><a class="dropdown-item" href="#">Cargo Express</a></li>
-                                  <li><a class="dropdown-item" href="#">Warehousing</a></li>
-                                  <li><a class="dropdown-item" href="#">custom-brokerage</a></li>
-                                  <li><a class="dropdown-item" href="#">Corporate Transportation</a></li>
-                                  <li><a class="dropdown-item" href="#">Goods Transportation</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('/air')}}"> Air Freight Forwarding</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('/ocean')}}">Ocean Freight Forwarding</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('/project-shipment')}}">Project Shipment</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('/cargo-express')}}">Cargo Express</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('/warehousing')}}">Warehousing</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('/custom-brokerage')}}">custom-brokerage</a></li>
                                 </ul>
                               </li>
                           <li class="nav-item dropdown">
@@ -66,7 +64,7 @@
                         <!-- logo begin -->
                         <div id="logo">
                             <div class="inner">
-                                <a href="index.html">
+                                <a href="/">
                                     <img src="{{asset('frontend')}}/img/cml-logo.png" alt="" class="logo-1">
                                     <img src="{{asset('frontend')}}/img/cml-logo.png" alt="" class="logo-2">
                                 </a>
@@ -128,12 +126,12 @@
                                 </li>
                                 <li><a href="#">E-Services</a>
                                     <ul>
-                                        <li><a href="#">WHAT IS E- SERVICES</a></li>
-                                        <li><a href="#">EASY</a></li>
-                                        <li><a href="#">STAY CONNECTED</a></li>
-                                        <li><a href="#">WORKFLOW</a></li>
-                                        <li><a href="#">VISVIBILTY</a></li>
-                                        <li><a href="#">BUSINESS IQ</a></li>
+                                        <li><a href="{{ url('/e_services') }}">WHAT IS E- SERVICES</a></li>
+                                        <li><a href="{{ url('/easy')}}">EASY</a></li>
+                                        <li><a href="{{ url('/connected')}}">STAY CONNECTED</a></li>
+                                        <li><a href="{{ url('/workflow')}}">WORKFLOW</a></li>
+                                        <li><a href="{{url('/visibility')}}">VISIBILITY</a></li>
+                                        <li><a href="{{url('/business')}}">BUSINESS IQ</a></li>
                                         <li><a href="#">GET STARTED</a>
                                             <ul>
                                                 <li><a href="{{url('/login')}}">CUSTOMER LOGIN</a></li>
@@ -145,16 +143,16 @@
 
                                 <li><a href="#">Customer Tools</a>
                                     <ul>
-                                        <li><a href="services.html">ADVISORIES</a>
+                                        <li><a href="">ADVISORIES</a>
                                             <ul>
-                                                <li><a href="#">GENERAL ADVISORIES</a></li>
-                                                <li><a href="#">INTERNATIONAL ADVISORIES</a></li>
-                                                <li><a href="#">HOLIDAY NOTICES</a></li>
+                                                <li><a href="{{ url('/general-advisories')}}">GENERAL ADVISORIES</a></li>
+                                                <li><a href="{{ url('/international-advisories')}}">INTERNATIONAL ADVISORIES</a></li>
+                                                <li><a href="{{ url('/holiday')}}">HOLIDAY NOTICES</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="https://scddac.webtracker.wisegrid.net/Login/Login.aspx?ReturnUrl=%2fDefault.aspx">TRACKING CENTER</a></li>
-                                        <li><a href="https://scddac.webtracker.wisegrid.net/Login/Login.aspx?ReturnUrl=%2fDefault.aspx">BOOK A SHIPMENT</a></li>
-                                        <li><a href="#">GIVE US FEEDBACK</a></li> 
+                                        <li><a href="https://ccls.cargoaim.com/">BOOK A SHIPMENT</a></li>
+                                        <li><a href="{{ url('/feedback')}}">GIVE US FEEDBACK</a></li> 
                                         </li>
                                     </ul>
                                 </li>
